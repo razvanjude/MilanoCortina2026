@@ -26,8 +26,12 @@ public class LoginPage {
         elementHelper.fillLocator(LoginLocators.insertPasswordField,passwordValue);
     }
 
+    public void acceptAllCookies() {
+        elementHelper.clickLocator(LoginLocators.acceptAllCookies);
+    }
+
     public void acceptCookies() {
-        elementHelper.clickLocator(LoginLocators.acceptCookies);
+        elementHelper.clickJsLocator(LoginLocators.acceptCookies);
     }
 
     public void confirmAgeandPolicy() {
@@ -36,5 +40,9 @@ public class LoginPage {
     }
     public void clickContinue() {
         elementHelper.clickJsLocator(LoginLocators.continueButton);
+    }
+
+    public void clickLogoutButton() {
+        elementHelper.clickJsLocator(LoginLocators.logoutButton);
     }
 }

@@ -14,11 +14,15 @@ public class LoginTest extends SharedData {
     public void metodaLogin() {
 
         LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.acceptAllCookies();
         loginPage.clickLoginButton();
         loginPage.acceptCookies();
         loginPage.fillEmailAddress("jude.razvan+123@gmail.com");
         loginPage.clickContinue();
         loginPage.fillPassword("Pa$$word01.");
         loginPage.clickContinue();
+        loginPage.acceptAllCookies();
+        loginPage.clickLoginButton();
+        //loginPage.clickLogoutButton();
     }
 }

@@ -29,7 +29,7 @@ public class ElementHelper {
     public void clickJsLocator (By locator) {
         waitForVisible(locator);
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", driver.findElement(locator)); // face un click fortat
+        js.executeScript("arguments[0].click();", driver.findElement(locator)); // forced click
     }
 
     public void fillLocator(By locator, String value) {
